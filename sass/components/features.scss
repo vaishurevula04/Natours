@@ -1,0 +1,32 @@
+.section-features--bgImg{
+    background-color: $color-grey-dark;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, 
+                                    rgba($color-primary-light, 0.801), 
+                                    rgba($color-primary-dark, 0.801)), 
+                                    url(../../img/nat-4.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0% 15vh, 100% 0, 100% 85vh, 0% 100%);
+}
+
+.feature-box{
+    margin-top: 10vh;
+    background-color: $color-grey-light-1;
+    height: 30vh;
+    width: 24rem;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    &:hover{
+        transform:translateY(-1.5rem) scale(1.03);
+        transition: all .5s ease-out 0.3ms;
+    }
+
+    &__icon{
+        font-size: 6rem;
+        background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+
+}

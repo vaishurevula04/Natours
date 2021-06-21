@@ -1,0 +1,33 @@
+.composition{
+    position: relative;
+    .composition__photo{
+        // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+        width: 75%;
+        position: absolute;
+        padding: 2rem;
+        
+        &--p1{
+            top: -2rem;
+            left: 0;
+            z-index: 0;
+        }
+        &--p2{
+            top: 5rem;
+            left: 20rem;
+            z-index: 1;
+        }
+        &--p3{
+            top: 15rem;
+            left: 5rem;
+            z-index: 2;
+        }
+        &:hover{
+            border: 2rem solid $color-primary;
+            
+            z-index: 10;
+            transform: scale(1.5);
+            transition: all .5s ease-out 0.3ms;
+
+        }
+    }
+}
